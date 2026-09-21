@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Select Elements</title>
+</head>
+
+<body>
+
+    <h1 id="heading">DOM Selection</h1>
+
+    <p class="text">Paragraph 1</p>
+    <p class="text">Paragraph 2</p>
+
+    <button onclick="selectElements()">Select Elements</button>
+
+    <script>
+        function selectElements() {
+
+            let heading = document.getElementById("heading");
+            heading.style.color = "red";
+
+            let paragraphs = document.getElementsByClassName("text");
+
+            for (let paragraph of paragraphs) {
+                paragraph.style.backgroundColor = "lightblue";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

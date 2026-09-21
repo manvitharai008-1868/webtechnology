@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI SaaS Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #111827;
+            color: white;
+            padding: 30px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .card {
+            background: #1f2937;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        .ai {
+            border: 1px solid #8b5cf6
+        }
+
+        @media(max-width:700px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🤖 AI SaaS Dashboard</h1>
+    <div class="grid">
+        <div class="card ai">
+            <h2>AI Insights</h2>
+            <p>Revenue is expected to increase.</p>
+        </div>
+        <div class="card">
+            <h2>Tokens</h2>
+            <h2>125K</h2>
+        </div>
+        <div class="card">
+            <h2>AI Requests</h2>
+            <h2>8,420</h2>
+        </div>
+        <div class="card">
+            <h2>Predictions</h2>
+            <p>85% confidence</p>
+        </div>
+        <div class="card">
+            <h2>Models</h2>
+            <p>12 active</p>
+        </div>
+        <div class="card">
+            <h2>Credits</h2>
+            <p>2,450 remaining</p>
+        </div>
+    </div>
+</body>
+
+</html>

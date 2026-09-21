@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Experiment Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .dashboard {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .experiments {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .experiment {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .status {
+            font-weight: bold;
+            color: #16a34a;
+        }
+
+        @media(max-width:700px) {
+            .experiments {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>ML Experiment Dashboard</h1>
+
+        <div class="experiments">
+
+            <div class="experiment">
+                <h2>Experiment 01</h2>
+                <p>Accuracy: 91%</p>
+                <p class="status">Completed</p>
+            </div>
+
+            <div class="experiment">
+                <h2>Experiment 02</h2>
+                <p>Accuracy: 94%</p>
+                <p class="status">Completed</p>
+            </div>
+
+            <div class="experiment">
+                <h2>Experiment 03</h2>
+                <p>Accuracy: 89%</p>
+                <p class="status">Running</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

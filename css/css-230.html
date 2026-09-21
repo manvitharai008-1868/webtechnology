@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Sliding Card</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef2f7;
+            padding: 50px
+        }
+
+        .card {
+            width: 300px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            animation: slide 1s ease
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(-200px);
+                opacity: 0
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Sliding Card</h1>
+        <p>This card slides into the page using a CSS animation.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        <label>Full Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Password:</label>
+        <input type="password" name="password" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" name="phone">
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+
+        <label>Gender:</label>
+
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <label>Course:</label>
+
+        <select name="course">
+            <option>BTech</option>
+            <option>BCA</option>
+            <option>BSc</option>
+            <option>MCA</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea rows="4"></textarea>
+
+        <label>
+            <input type="checkbox" required>
+            I agree to the terms and conditions.
+        </label>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <br>
+
+    <a href="../index.html">Home</a> |
+    <a href="index.html">Back to HTML Programs</a>
+
+</body>
+
+</html>

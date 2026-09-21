@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Age Validation</title>
+</head>
+
+<body>
+
+    <h2>Age Validation</h2>
+
+    <input type="number" id="age" placeholder="Enter age">
+
+    <button onclick="validateAge()">Validate</button>
+
+    <p id="message"></p>
+
+    <script>
+        function validateAge() {
+
+            let age = Number(document.getElementById("age").value);
+
+            if (age >= 18 && age <= 60) {
+                document.getElementById("message").innerText =
+                    "Valid age.";
+            } else {
+                document.getElementById("message").innerText =
+                    "Age must be between 18 and 60.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

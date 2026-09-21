@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Confirm Password</title>
+</head>
+
+<body>
+
+    <h2>Confirm Password</h2>
+
+    <input type="password" id="password" placeholder="Password">
+    <br><br>
+
+    <input type="password" id="confirm" placeholder="Confirm Password">
+    <br><br>
+
+    <button onclick="checkPassword()">Check</button>
+
+    <p id="message"></p>
+
+    <script>
+        function checkPassword() {
+
+            let password = document.getElementById("password").value;
+            let confirm = document.getElementById("confirm").value;
+
+            if (password === confirm) {
+                document.getElementById("message").innerText =
+                    "Passwords match.";
+            } else {
+                document.getElementById("message").innerText =
+                    "Passwords do not match.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

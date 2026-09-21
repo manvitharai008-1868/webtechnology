@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Location Object</title>
+</head>
+
+<body>
+
+    <h2>Current Page Location</h2>
+
+    <button onclick="showLocation()">Show URL</button>
+
+    <p id="result"></p>
+
+    <script>
+        function showLocation() {
+
+            document.getElementById("result").innerText =
+                window.location.href;
+        }
+    </script>
+
+</body>
+
+</html>

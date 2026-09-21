@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tooltip</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 80px;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            position: absolute;
+            bottom: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #222;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+        }
+
+        button {
+            padding: 12px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tooltip">
+
+        <button>Hover Me</button>
+
+        <span class="tooltip-text">
+            This is a tooltip
+        </span>
+
+    </div>
+
+</body>
+
+</html>

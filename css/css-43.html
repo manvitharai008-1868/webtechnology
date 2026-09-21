@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tab Navigation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tab {
+            padding: 12px 25px;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            color: #2563eb;
+            border-bottom: 3px solid #2563eb;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Tab Navigation</h2>
+
+    <div class="tabs">
+        <div class="tab active">Overview</div>
+        <div class="tab">Features</div>
+        <div class="tab">Pricing</div>
+        <div class="tab">Reviews</div>
+    </div>
+
+    <div class="content">
+        <h3>Overview</h3>
+        <p>This is the overview section.</p>
+    </div>
+
+</body>
+
+</html>

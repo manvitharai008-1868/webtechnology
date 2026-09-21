@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pie and Donut Chart</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .chart {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .pie {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(#2563eb 0 40%,
+                    #60a5fa 40% 70%,
+                    #bfdbfe 70% 100%);
+        }
+
+        .donut {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(#7c3aed 0 72%,
+                    #ddd6fe 72%);
+
+            display: grid;
+            place-items: center;
+        }
+
+        .donut::after {
+            content: "72%";
+            background: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pie and Donut Charts</h1>
+
+    <div class="container">
+
+        <div class="chart">
+            <h2>Pie Chart</h2>
+            <div class="pie"></div>
+        </div>
+
+        <div class="chart">
+            <h2>Donut Chart</h2>
+            <div class="donut"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

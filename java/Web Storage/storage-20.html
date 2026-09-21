@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi Page Form</title>
+</head>
+
+<body>
+
+    <h2>Multi-Page Form</h2>
+
+    <input type="text" id="name" placeholder="Enter name">
+
+    <br><br>
+
+    <input type="email" id="email" placeholder="Enter email">
+
+    <br><br>
+
+    <button onclick="saveData()">Save and Continue</button>
+
+    <p id="result"></p>
+
+    <script>
+        function saveData() {
+
+            sessionStorage.setItem(
+                "name",
+                document.getElementById("name").value
+            );
+
+            sessionStorage.setItem(
+                "email",
+                document.getElementById("email").value
+            );
+
+            document.getElementById("result").innerText =
+                "Data saved for the next page.";
+        }
+    </script>
+
+</body>
+
+</html>

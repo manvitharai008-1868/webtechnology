@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>API Usage Analytics</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .dashboard {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .usage {
+            margin-top: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .bar {
+            height: 20px;
+            background: #e5e7eb;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .fill {
+            width: 72%;
+            height: 100%;
+            background: #2563eb;
+        }
+
+        @media(max-width:700px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>API Usage Analytics</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Requests</h3>
+                <div class="value">24K</div>
+            </div>
+
+            <div class="card">
+                <h3>Successful</h3>
+                <div class="value">23K</div>
+            </div>
+
+            <div class="card">
+                <h3>Errors</h3>
+                <div class="value">320</div>
+            </div>
+
+            <div class="card">
+                <h3>Average Latency</h3>
+                <div class="value">120ms</div>
+            </div>
+
+        </div>
+
+        <div class="usage">
+            <h2>Monthly API Usage</h2>
+
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+
+            <p>72% of monthly limit used</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

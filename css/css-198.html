@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SaaS Pricing Plans</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px
+        }
+
+        .plans {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .plan {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ddd
+        }
+
+        .price {
+            font-size: 35px;
+            font-weight: bold
+        }
+
+        button {
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            border: 0;
+            border-radius: 6px
+        }
+
+        @media(max-width:700px) {
+            .plans {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="plans">
+        <div class="plan">
+            <h2>Basic</h2>
+            <div class="price">₹499</div>
+            <p>5 Users</p><button>Choose</button>
+        </div>
+        <div class="plan">
+            <h2>Pro</h2>
+            <div class="price">₹999</div>
+            <p>20 Users</p><button>Choose</button>
+        </div>
+        <div class="plan">
+            <h2>Enterprise</h2>
+            <div class="price">₹1999</div>
+            <p>Unlimited Users</p><button>Choose</button>
+        </div>
+    </div>
+</body>
+
+</html>

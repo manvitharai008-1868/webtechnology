@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 150px;
+            height: 100px;
+            background: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition:
+                width 0.5s,
+                height 0.5s,
+                background-color 0.5s,
+                transform 0.5s;
+        }
+
+        .box:hover {
+            width: 250px;
+            height: 150px;
+            background-color: green;
+            transform: translateX(30px);
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 20px;
+            background: purple;
+            color: white;
+            border: none;
+            transition: 0.4s;
+        }
+
+        button:hover {
+            background: orange;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transitions</h1>
+
+    <div class="box">
+        Hover Me
+    </div>
+
+    <button>
+        Hover Button
+    </button>
+
+    <br><br>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

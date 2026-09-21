@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Real-Time Analytics</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .activity {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 5px 15px #0002;
+        }
+
+        .item {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .live {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Real-Time Analytics</h1>
+
+    <div class="activity">
+
+        <h2>Live Activity</h2>
+
+        <div class="item">
+            <span class="live">● LIVE</span>
+            User signed in
+        </div>
+
+        <div class="item">
+            <span class="live">● LIVE</span>
+            Order #4821 created
+        </div>
+
+        <div class="item">
+            <span class="live">● LIVE</span>
+            Payment received
+        </div>
+
+        <br>
+
+        <button onclick="location.reload()">Refresh</button>
+
+    </div>
+
+</body>
+
+</html>

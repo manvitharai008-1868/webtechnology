@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SaaS Blog</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            margin: 0
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background: #111827;
+            color: white
+        }
+
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px
+        }
+
+        .post {
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        .post h2 {
+            color: #2563eb
+        }
+
+        @media(max-width:700px) {
+            .posts {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CloudApp News</h1>
+        <p>Latest SaaS technology and product updates</p>
+    </header>
+    <div class="posts">
+        <article class="post">
+            <h2>AI in SaaS</h2>
+            <p>Discover how AI is changing modern applications.</p>
+        </article>
+        <article class="post">
+            <h2>New Dashboard</h2>
+            <p>Our latest dashboard features are here.</p>
+        </article>
+        <article class="post">
+            <h2>Security Update</h2>
+            <p>Learn about our latest security improvements.</p>
+        </article>
+    </div>
+</body>
+
+</html>

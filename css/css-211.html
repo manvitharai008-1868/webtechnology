@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Flexbox</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f1f5f9
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap
+        }
+
+        .card {
+            flex: 1 1 250px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Column 1</h2>
+            <p>Responsive content.</p>
+        </div>
+        <div class="card">
+            <h2>Column 2</h2>
+            <p>Responsive content.</p>
+        </div>
+        <div class="card">
+            <h2>Column 3</h2>
+            <p>Responsive content.</p>
+        </div>
+    </div>
+</body>
+
+</html>

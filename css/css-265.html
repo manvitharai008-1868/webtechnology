@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SaaS Help Center</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            margin: 0
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 50px
+        }
+
+        .search {
+            padding: 15px;
+            width: 60%;
+            border: 0;
+            border-radius: 8px
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        @media(max-width:700px) {
+            .categories {
+                grid-template-columns: 1fr
+            }
+
+            .search {
+                width: 80%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>How can we help?</h1>
+        <input class="search" placeholder="Search help articles...">
+    </header>
+    <div class="categories">
+        <div class="card">
+            <h2>Getting Started</h2>
+            <p>Learn how to use the platform.</p>
+        </div>
+        <div class="card">
+            <h2>Account</h2>
+            <p>Manage account settings.</p>
+        </div>
+        <div class="card">
+            <h2>Billing</h2>
+            <p>Payment and subscription help.</p>
+        </div>
+    </div>
+</body>
+
+</html>

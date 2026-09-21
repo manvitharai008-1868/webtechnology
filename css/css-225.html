@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fixed SaaS Sidebar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f7fa
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 220px;
+            background: #111827;
+            color: white;
+            padding: 25px
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 30px
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 10px
+        }
+
+        @media(max-width:600px) {
+            .sidebar {
+                width: 150px
+            }
+
+            .content {
+                margin-left: 180px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <h2>SaaS</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Analytics</a>
+        <a href="#">Projects</a>
+        <a href="#">Settings</a>
+    </aside>
+    <main class="content">
+        <div class="card">
+            <h1>Dashboard</h1>
+            <p>Welcome to your SaaS dashboard.</p>
+        </div>
+        <div class="card">
+            <h2>Analytics</h2>
+            <p>View your business analytics.</p>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Validation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        form {
+            width: 350px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .error {
+            color: #dc2626;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Form Validation</h2>
+
+    <form>
+
+        <input type="text" placeholder="Name">
+
+        <p class="error">Name is required.</p>
+
+        <input type="email" placeholder="Email">
+
+        <p class="error">Please enter a valid email.</p>
+
+        <button>Submit</button>
+
+    </form>
+
+</body>
+
+</html>

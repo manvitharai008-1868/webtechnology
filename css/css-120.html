@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI-Powered Search Interface</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f3ff;
+            padding: 40px;
+        }
+
+        .search-box {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #0002;
+        }
+
+        input {
+            width: 80%;
+            padding: 14px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 14px;
+            background: #7c3aed;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .result {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="search-box">
+
+        <h1>🔍 AI-Powered Search</h1>
+
+        <input id="search" placeholder="Search anything..." onkeyup="searchData()">
+
+        <button onclick="searchData()">
+            Search
+        </button>
+
+        <div id="results">
+
+            <p>Start typing to see results.</p>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        let data = [
+            "Python Programming",
+            "CSS Dashboard Design",
+            "JavaScript DOM",
+            "Data Analytics",
+            "AI Assistant Interface",
+            "Web Development",
+            "Software Engineering"
+        ];
+
+        function searchData() {
+
+            let query =
+                document.getElementById("search")
+                    .value
+                    .toLowerCase();
+
+            let results =
+                data.filter(function (item) {
+
+                    return item.toLowerCase()
+                        .includes(query);
+
+                });
+
+            let output = "";
+
+            if (query === "") {
+
+                output = "<p>Start typing to see results.</p>";
+
+            } else if (results.length === 0) {
+
+                output = "<p>No matching results.</p>";
+
+            } else {
+
+                results.forEach(function (item) {
+
+                    output += `
+                <div class="result">
+                    🔎 <b>${item}</b>
+                </div>
+            `;
+
+                });
+            }
+
+            document.getElementById("results").innerHTML =
+                output;
+        }
+
+    </script>
+
+</body>
+
+</html>

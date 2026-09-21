@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Application</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .quiz {
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            box-shadow: 0 3px 10px #aaa;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quiz">
+
+        <h1>Quiz</h1>
+
+        <h2 id="question"></h2>
+
+        <div id="answers"></div>
+
+        <p id="result"></p>
+
+    </div>
+
+    <script>
+
+        const questions = [
+            {
+                question: "Which language runs in a web browser?",
+                answers: ["Python", "JavaScript", "C", "SQL"],
+                correct: "JavaScript"
+            },
+            {
+                question: "Which keyword declares a constant?",
+                answers: ["var", "let", "const", "define"],
+                correct: "const"
+            }
+        ];
+
+        let current = 0;
+        let score = 0;
+
+        function showQuestion() {
+
+            let q = questions[current];
+
+            document.getElementById("question").innerHTML =
+                q.question;
+
+            let answers = document.getElementById("answers");
+
+            answers.innerHTML = "";
+
+            q.answers.forEach(function (answer) {
+
+                let button = document.createElement("button");
+
+                button.innerHTML = answer;
+
+                button.onclick = function () {
+                    checkAnswer(answer);
+                };
+
+                answers.appendChild(button);
+            });
+        }
+
+        function checkAnswer(answer) {
+
+            if (answer === questions[current].correct) {
+                score++;
+            }
+
+            current++;
+
+            if (current < questions.length) {
+                showQuestion();
+            } else {
+                document.getElementById("question").innerHTML =
+                    "Quiz Completed";
+
+                document.getElementById("answers").innerHTML = "";
+
+                document.getElementById("result").innerHTML =
+                    "Your Score: " + score + "/" + questions.length;
+            }
+        }
+
+        showQuestion();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visitor Counter</title>
+</head>
+
+<body>
+
+    <h2>Visitor Counter</h2>
+
+    <p id="counter"></p>
+
+    <script>
+        let count = Number(
+            localStorage.getItem("visits") || 0
+        );
+
+        count++;
+
+        localStorage.setItem(
+            "visits",
+            count
+        );
+
+        document.getElementById("counter").innerText =
+            "You have visited this page " +
+            count + " time(s).";
+    </script>
+
+</body>
+
+</html>

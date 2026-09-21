@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Hover Effects</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 50px;
+            text-align: center
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 220px;
+            border-radius: 12px;
+            transition: .3s
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px #bbb
+        }
+
+        button {
+            padding: 12px 25px;
+            border: 0;
+            background: #2563eb;
+            color: white;
+            border-radius: 6px;
+            transition: .3s
+        }
+
+        button:hover {
+            transform: scale(1.08)
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hover Effects</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>Card</h2>
+            <p>Hover over me</p><button>Click</button>
+        </div>
+        <div class="card">
+            <h2>Card</h2>
+            <p>Hover over me</p><button>Click</button>
+        </div>
+    </div>
+</body>
+
+</html>

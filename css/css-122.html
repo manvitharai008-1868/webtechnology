@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 121 - AI Search Results</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .search {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        input {
+            flex: 1;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 14px 22px;
+            border: none;
+            border-radius: 8px;
+            background: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        .result {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .result h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Search Results</h1>
+
+        <div class="search">
+            <input type="text" placeholder="Search with AI...">
+            <button>Search</button>
+        </div>
+
+        <div class="result">
+            <h3>What is Artificial Intelligence?</h3>
+            <p>Artificial Intelligence allows computers to perform tasks that normally require human intelligence.</p>
+        </div>
+
+        <div class="result">
+            <h3>Machine Learning</h3>
+            <p>Machine Learning is a branch of AI that enables systems to learn from data.</p>
+        </div>
+
+        <div class="result">
+            <h3>AI Applications</h3>
+            <p>AI is used in healthcare, education, finance, transportation and many other fields.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

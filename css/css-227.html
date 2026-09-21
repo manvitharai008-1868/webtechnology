@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Media Gallery</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            padding: 20px
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px
+        }
+
+        .item {
+            height: 180px;
+            background: #2563eb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 25px
+        }
+
+        @media(max-width:800px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:500px) {
+            .gallery {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Media Gallery</h1>
+    <div class="gallery">
+        <div class="item">Photo 1</div>
+        <div class="item">Photo 2</div>
+        <div class="item">Photo 3</div>
+        <div class="item">Photo 4</div>
+        <div class="item">Video 1</div>
+        <div class="item">Video 2</div>
+    </div>
+</body>
+
+</html>

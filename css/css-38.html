@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive SaaS Menu</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #1f2937;
+            padding: 15px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #60a5fa;
+        }
+
+        @media (max-width: 650px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            SaaSApp
+        </div>
+
+        <div class="menu">
+
+            <a href="#">Dashboard</a>
+            <a href="#">Products</a>
+            <a href="#">Analytics</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+    </nav>
+
+    <main style="padding:40px;">
+        <h1>Responsive SaaS Menu</h1>
+        <p>Resize the browser window to test responsiveness.</p>
+    </main>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

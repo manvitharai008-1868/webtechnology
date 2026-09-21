@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive SaaS Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px
+        }
+
+        form {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px;
+            box-sizing: border-box
+        }
+
+        button {
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            border: 0;
+            border-radius: 6px
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Contact SaaS Team</h1>
+        <label>Name</label>
+        <input type="text" placeholder="Your Name">
+        <label>Email</label>
+        <input type="email" placeholder="Your Email">
+        <label>Plan</label>
+        <select>
+            <option>Basic</option>
+            <option>Pro</option>
+            <option>Enterprise</option>
+        </select>
+        <label>Message</label>
+        <textarea rows="5"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

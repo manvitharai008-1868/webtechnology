@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analytics Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            margin: 0;
+            padding: 25px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        .number {
+            font-size: 32px;
+            font-weight: bold
+        }
+
+        .bar {
+            height: 20px;
+            background: #ddd;
+            margin-top: 15px
+        }
+
+        .fill {
+            height: 100%;
+            background: #2563eb
+        }
+
+        @media(max-width:700px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analytics Dashboard</h1>
+    <div class="grid">
+        <div class="card">
+            <h3>Visitors</h3>
+            <div class="number">45K</div>
+        </div>
+        <div class="card">
+            <h3>Conversions</h3>
+            <div class="number">7.2K</div>
+        </div>
+        <div class="card">
+            <h3>Revenue</h3>
+            <div class="number">₹98K</div>
+        </div>
+        <div class="card">
+            <h3>Traffic</h3>
+            <div class="bar">
+                <div class="fill" style="width:75%"></div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Growth</h3>
+            <div class="number">28%</div>
+        </div>
+        <div class="card">
+            <h3>Sessions</h3>
+            <div class="number">32K</div>
+        </div>
+    </div>
+</body>
+
+</html>

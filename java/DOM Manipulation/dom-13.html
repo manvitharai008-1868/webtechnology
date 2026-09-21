@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Dropdown</title>
+</head>
+
+<body>
+
+    <h1>Dynamic Dropdown</h1>
+
+    <select id="course">
+        <option>HTML</option>
+        <option>CSS</option>
+    </select>
+
+    <button onclick="addCourse()">Add JavaScript</button>
+
+    <script>
+        function addCourse() {
+
+            let option = document.createElement("option");
+
+            option.textContent = "JavaScript";
+
+            document.getElementById("course").appendChild(option);
+        }
+    </script>
+
+</body>
+
+</html>

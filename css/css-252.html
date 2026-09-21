@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Complete SaaS Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f1f5f9
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px
+        }
+
+        main {
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        .chart {
+            grid-column: span 2;
+            height: 180px;
+            background: #eef2ff;
+            padding: 20px
+        }
+
+        @media(max-width:800px) {
+            main {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            .chart {
+                grid-column: span 2
+            }
+        }
+
+        @media(max-width:500px) {
+            main {
+                grid-template-columns: 1fr
+            }
+
+            .chart {
+                grid-column: span 1
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SaaS Dashboard</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h3>Users</h3>
+            <h2>12,450</h2>
+        </div>
+        <div class="card">
+            <h3>Revenue</h3>
+            <h2>₹1.2L</h2>
+        </div>
+        <div class="card">
+            <h3>Orders</h3>
+            <h2>3,420</h2>
+        </div>
+        <div class="card">
+            <h3>Growth</h3>
+            <h2>24%</h2>
+        </div>
+        <div class="chart">
+            <h2>Revenue Analytics</h2>
+            <p>▂ ▃ ▅ ▆ ▇ █</p>
+        </div>
+        <div class="card">
+            <h2>Recent Activity</h2>
+            <p>New user registered</p>
+            <p>Invoice generated</p>
+        </div>
+    </main>
+</body>
+
+</html>

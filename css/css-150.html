@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 150 - AI Agent Task Queue</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 50px auto;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            margin: 12px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .task-info h3 {
+            margin: 0;
+        }
+
+        .priority {
+            padding: 6px 12px;
+            background: #eee;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Agent Task Queue</h1>
+
+        <div class="task">
+            <div class="task-info">
+                <h3>Analyze Customer Data</h3>
+                <p>Data Agent</p>
+            </div>
+            <span class="priority">High</span>
+        </div>
+
+        <div class="task">
+            <div class="task-info">
+                <h3>Generate Report</h3>
+                <p>Report Agent</p>
+            </div>
+            <span class="priority">Medium</span>
+        </div>
+
+        <div class="task">
+            <div class="task-info">
+                <h3>Summarize Document</h3>
+                <p>Research Agent</p>
+            </div>
+            <span class="priority">Low</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

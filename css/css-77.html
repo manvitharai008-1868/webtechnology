@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Skeleton Loading</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        .card {
+            width: 350px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .skeleton {
+            background: #e5e7eb;
+            border-radius: 5px;
+            margin: 12px 0;
+            animation: pulse 1.5s infinite;
+        }
+
+        .image {
+            height: 150px;
+        }
+
+        .line {
+            height: 15px;
+        }
+
+        .short {
+            width: 60%;
+        }
+
+        @keyframes pulse {
+            50% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="skeleton image"></div>
+
+        <div class="skeleton line"></div>
+
+        <div class="skeleton line short"></div>
+
+    </div>
+
+</body>
+
+</html>

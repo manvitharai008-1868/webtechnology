@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Application</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 40px;
+        }
+
+        input,
+        button {
+            padding: 12px;
+            margin: 5px;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Weather Application</h1>
+
+    <p>Enter a city:</p>
+
+    <input type="text" id="city" placeholder="Example: Chennai">
+
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div id="result"></div>
+
+    <script>
+
+        async function getWeather() {
+
+            let city = document.getElementById("city").value;
+
+            if (city === "") {
+                alert("Enter a city name");
+                return;
+            }
+
+            document.getElementById("result").innerHTML =
+                "Weather API demonstration for: " + city;
+
+            /*
+            To use a real weather API, add your API key
+            and replace the URL below with the API provider's
+            current endpoint.
+            */
+        }
+
+    </script>
+
+</body>
+
+</html>

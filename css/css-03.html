@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Combinators</title>
+
+    <style>
+        /* Descendant Selector */
+        .container p {
+            color: blue;
+        }
+
+        /* Child Selector */
+        .container>h2 {
+            color: red;
+        }
+
+        /* Adjacent Sibling Selector */
+        h3+p {
+            background-color: lightyellow;
+        }
+
+        /* General Sibling Selector */
+        h4~p {
+            color: green;
+        }
+
+        div {
+            padding: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Combinator Selectors</h1>
+
+    <div class="container">
+
+        <h2>Child Selector</h2>
+
+        <p>Descendant paragraph 1.</p>
+        <p>Descendant paragraph 2.</p>
+
+        <h3>Adjacent Sibling Heading</h3>
+
+        <p>This paragraph is adjacent to h3.</p>
+
+        <h4>General Sibling Heading</h4>
+
+        <p>General sibling paragraph 1.</p>
+        <p>General sibling paragraph 2.</p>
+
+    </div>
+
+    <br>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

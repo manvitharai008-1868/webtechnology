@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animated SaaS Cards</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 40px
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 230px;
+            border-radius: 12px;
+            animation: float 3s infinite ease-in-out;
+            box-shadow: 0 4px 15px #ddd
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-10px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center">Animated SaaS Cards</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>Analytics</h2>
+            <p>Monitor your data.</p>
+        </div>
+        <div class="card">
+            <h2>Reports</h2>
+            <p>Generate reports.</p>
+        </div>
+        <div class="card">
+            <h2>Team</h2>
+            <p>Manage your team.</p>
+        </div>
+    </div>
+</body>
+
+</html>

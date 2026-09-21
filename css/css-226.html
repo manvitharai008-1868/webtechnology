@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive SaaS Footer</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0
+        }
+
+        main {
+            min-height: 500px;
+            padding: 30px;
+            background: #f1f5f9
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            padding: 35px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        footer a {
+            display: block;
+            color: white;
+            margin: 8px 0;
+            text-decoration: none
+        }
+
+        @media(max-width:600px) {
+            footer {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>SaaS Platform</h1>
+        <p>Main website content.</p>
+    </main>
+    <footer>
+        <div>
+            <h3>Product</h3><a href="#">Features</a><a href="#">Pricing</a>
+        </div>
+        <div>
+            <h3>Company</h3><a href="#">About</a><a href="#">Contact</a>
+        </div>
+        <div>
+            <h3>Support</h3><a href="#">Help</a><a href="#">Documentation</a>
+        </div>
+    </footer>
+</body>
+
+</html>

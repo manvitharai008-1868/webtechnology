@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Risk Score Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .dashboard {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .score {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        @media(max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <h1>ML Risk Score Dashboard</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Customer Risk</h3>
+                <div class="score">24%</div>
+            </div>
+
+            <div class="card">
+                <h3>Transaction Risk</h3>
+                <div class="score">12%</div>
+            </div>
+
+            <div class="card">
+                <h3>System Risk</h3>
+                <div class="score">18%</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

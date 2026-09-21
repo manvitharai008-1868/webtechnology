@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Agent Configuration</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ccc;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>AI Agent Settings</h1>
+
+        <label>Agent Name</label>
+        <input type="text" placeholder="Enter agent name">
+
+        <label>Model</label>
+        <select>
+            <option>GPT Model</option>
+            <option>AI Assistant</option>
+            <option>Custom Model</option>
+        </select>
+
+        <label>Temperature</label>
+        <input type="range" min="0" max="100" value="50">
+
+        <label>Response Length</label>
+        <select>
+            <option>Short</option>
+            <option>Medium</option>
+            <option>Long</option>
+        </select>
+
+        <button>Save Configuration</button>
+    </div>
+
+</body>
+
+</html>

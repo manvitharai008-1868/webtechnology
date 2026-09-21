@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Webhook Management</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            padding: 30px
+        }
+
+        .box {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        .webhook {
+            padding: 18px;
+            border-bottom: 1px solid #ddd
+        }
+
+        .status {
+            color: green;
+            font-weight: bold
+        }
+
+        button {
+            padding: 9px 16px;
+            border: 0;
+            border-radius: 5px;
+            background: #2563eb;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Webhook Management</h1>
+        <div class="webhook">
+            <h3>Order Created</h3>
+            <p>https://example.com/order</p><span class="status">Active</span>
+        </div>
+        <div class="webhook">
+            <h3>User Registered</h3>
+            <p>https://example.com/user</p><span class="status">Active</span>
+        </div>
+        <button>Add Webhook</button>
+    </div>
+</body>
+
+</html>

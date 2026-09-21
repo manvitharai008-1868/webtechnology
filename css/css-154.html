@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 154 - AI Agent Workflow</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .workflow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            background: white;
+            padding: 25px;
+            width: 160px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .arrow {
+            font-size: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .workflow {
+                flex-direction: column;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Agent Workflow</h1>
+
+        <div class="workflow">
+
+            <div class="step">
+                <h3>1</h3>
+                <p>Input</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <h3>2</h3>
+                <p>Analyze</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <h3>3</h3>
+                <p>Process</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="step">
+                <h3>4</h3>
+                <p>Output</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

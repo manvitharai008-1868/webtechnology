@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Team Management</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .member {
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        button {
+            padding: 8px 15px;
+            background: #2563eb;
+            color: white;
+            border: 0;
+            border-radius: 5px
+        }
+
+        @media(max-width:700px) {
+            .team {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Team Management</h1>
+    <div class="team">
+        <div class="member">
+            <h2>Sarah</h2>
+            <p>Designer</p><button>Manage</button>
+        </div>
+        <div class="member">
+            <h2>Alex</h2>
+            <p>Developer</p><button>Manage</button>
+        </div>
+        <div class="member">
+            <h2>Priya</h2>
+            <p>Manager</p><button>Manage</button>
+        </div>
+    </div>
+</body>
+
+</html>

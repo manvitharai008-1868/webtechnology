@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agent Permissions</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            padding: 30px;
+        }
+
+        .box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .permission {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <h1>Agent Permissions</h1>
+
+        <div class="permission">
+            <span>Read Data</span>
+            <input type="checkbox" checked>
+        </div>
+
+        <div class="permission">
+            <span>Write Data</span>
+            <input type="checkbox">
+        </div>
+
+        <div class="permission">
+            <span>API Access</span>
+            <input type="checkbox" checked>
+        </div>
+
+        <div class="permission">
+            <span>Send Notifications</span>
+            <input type="checkbox">
+        </div>
+
+        <button>Save Permissions</button>
+    </div>
+
+</body>
+
+</html>

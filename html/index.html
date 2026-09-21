@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Programs</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .program-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .program {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .program:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .program h2 {
+            color: #1e3a8a;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .program p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .program a {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 6px;
+        }
+
+        .program a:hover {
+            background: #1e3a8a;
+        }
+
+        .home {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .home a {
+            text-decoration: none;
+            background: #111827;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .program-list {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>HTML Programs</h1>
+        <p>HTML, CSS & JavaScript Practical Assignment</p>
+    </header>
+
+    <!-- Programs -->
+    <div class="container">
+
+        <div class="program-list">
+
+            <!-- Program 1 -->
+            <div class="program">
+                <h2>1. Headings, Paragraphs and Line Breaks</h2>
+                <p>Demonstration of headings, paragraphs and line breaks.</p>
+                <a href="html-01.html">Open Program</a>
+            </div>
+
+            <!-- Program 2 -->
+            <div class="program">
+                <h2>2. HTML Lists</h2>
+                <p>Ordered, unordered and description lists.</p>
+                <a href="html-02.html">Open Program</a>
+            </div>
+
+            <!-- Program 3 -->
+            <div class="program">
+                <h2>3. HTML Tables</h2>
+                <p>Tables with rows, columns, borders and merged cells.</p>
+                <a href="html-03.html">Open Program</a>
+            </div>
+
+            <!-- Program 4 -->
+            <div class="program">
+                <h2>4. Images and Hyperlinks</h2>
+                <p>Adding images and hyperlinks to a webpage.</p>
+                <a href="html-04.html">Open Program</a>
+            </div>
+
+            <!-- Program 5 -->
+            <div class="program">
+                <h2>5. Student Registration Form</h2>
+                <p>Creating a student registration form using HTML.</p>
+                <a href="html-05.html">Open Program</a>
+            </div>
+
+            <!-- Program 6 -->
+            <div class="program">
+                <h2>6. Audio and Video</h2>
+                <p>Using HTML audio and video elements.</p>
+                <a href="html-06.html">Open Program</a>
+            </div>
+
+            <!-- Program 7 -->
+            <div class="program">
+                <h2>7. Frames / Iframes</h2>
+                <p>Embedding webpages and content using iframes.</p>
+                <a href="html-07.html">Open Program</a>
+            </div>
+
+            <!-- Program 8 -->
+            <div class="program">
+                <h2>8. Semantic Elements</h2>
+                <p>Using header, nav, section, article and footer.</p>
+                <a href="html-08.html">Open Program</a>
+            </div>
+
+            <!-- Program 9 -->
+            <div class="program">
+                <h2>9. HTML5 Input Types</h2>
+                <p>Email, date, number and password input types.</p>
+                <a href="html-09.html">Open Program</a>
+            </div>
+
+            <!-- Program 10 -->
+            <div class="program">
+                <h2>10. College Timetable</h2>
+                <p>Creating a college timetable using HTML tables.</p>
+                <a href="html-10.html">Open Program</a>
+            </div>
+
+            <!-- Program 11 -->
+            <div class="program">
+                <h2>11. Internal and External CSS</h2>
+                <p>Demonstration of internal and external CSS.</p>
+                <a href="html-11.html">Open Program</a>
+            </div>
+
+            <!-- Program 12 -->
+            <div class="program">
+                <h2>12. CSS Selectors and Properties</h2>
+                <p>Selectors, colors, fonts, margins, padding and borders.</p>
+                <a href="html-12.html">Open Program</a>
+            </div>
+
+            <!-- Program 13 -->
+            <div class="program">
+                <h2>13. Responsive Webpage</h2>
+                <p>Creating a responsive webpage using media queries.</p>
+                <a href="html-13.html">Open Program</a>
+            </div>
+
+            <!-- Program 14 -->
+            <div class="program">
+                <h2>14. Bootstrap Components</h2>
+                <p>Using Bootstrap navbar, cards, buttons and alerts.</p>
+                <a href="html-14.html">Open Program</a>
+            </div>
+
+            <!-- Program 15 -->
+            <div class="program">
+                <h2>15. Personal Portfolio</h2>
+                <p>Creating a personal portfolio webpage.</p>
+                <a href="html-15.html">Open Program</a>
+            </div>
+
+        </div>
+
+        <!-- Back to Main Dashboard -->
+        <div class="home">
+            <a href="../index.html">← Back to Main Dashboard</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 HTML Practical Assignment</p>
+    </footer>
+
+</body>
+
+</html>

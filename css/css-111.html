@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analytics Date Range Filter</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .filter {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #0002;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Analytics Date-Range Filter</h1>
+
+    <div class="filter">
+
+        <label>
+            From:
+            <input type="date" id="from">
+        </label>
+
+        <label>
+            To:
+            <input type="date" id="to">
+        </label>
+
+        <button onclick="applyFilter()">Apply</button>
+
+        <p id="result"></p>
+
+    </div>
+
+    <script>
+        function applyFilter() {
+
+            let from = document.getElementById("from").value;
+            let to = document.getElementById("to").value;
+
+            document.getElementById("result").innerHTML =
+                "Selected range: " + from + " to " + to;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z-Index</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            height: 300px;
+        }
+
+        .box {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            padding: 20px;
+            color: white;
+        }
+
+        .box1 {
+            background: blue;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        .box2 {
+            background: red;
+            left: 120px;
+            top: 100px;
+            z-index: 2;
+        }
+
+        .box3 {
+            background: green;
+            left: 190px;
+            top: 150px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Z-Index and Stacking Order</h1>
+
+    <div class="container">
+
+        <div class="box box1">
+            Z-Index: 1
+        </div>
+
+        <div class="box box2">
+            Z-Index: 2
+        </div>
+
+        <div class="box box3">
+            Z-Index: 3
+        </div>
+
+    </div>
+
+    <p>
+        The element with the highest z-index appears on top.
+    </p>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

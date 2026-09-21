@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Chat Interface</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .chat {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .messages {
+            height: 300px;
+            overflow-y: auto;
+            background: #f8fafc;
+            padding: 20px;
+        }
+
+        input {
+            width: 75%;
+            padding: 12px;
+        }
+
+        button {
+            padding: 12px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chat">
+
+        <h1>🤖 AI Chat</h1>
+
+        <div class="messages" id="messages">
+
+            <p>
+                <b>AI:</b>
+                Hello! How can I help you?
+            </p>
+
+        </div>
+
+        <br>
+
+        <input id="message" placeholder="Type your message...">
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+    <script>
+        function sendMessage() {
+
+            let input =
+                document.getElementById("message");
+
+            let message = input.value;
+
+            if (message === "")
+                return;
+
+            let chat =
+                document.getElementById("messages");
+
+            chat.innerHTML += `
+        <p>
+            <b>You:</b> ${message}
+        </p>
+
+        <p>
+            <b>AI:</b> Thanks for your message!
+        </p>
+    `;
+
+            input.value = "";
+
+            chat.scrollTop = chat.scrollHeight;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retrieve localStorage</title>
+</head>
+
+<body>
+
+    <h2>Retrieve Username</h2>
+
+    <button onclick="showName()">Show Username</button>
+
+    <p id="result"></p>
+
+    <script>
+        function showName() {
+
+            let username = localStorage.getItem("username");
+
+            if (username) {
+                document.getElementById("result").innerText =
+                    "Username: " + username;
+            } else {
+                document.getElementById("result").innerText =
+                    "No username found.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

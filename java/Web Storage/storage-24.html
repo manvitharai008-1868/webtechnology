@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Marks</title>
+</head>
+
+<body>
+
+    <h2>Student Marks</h2>
+
+    <input type="text" id="name" placeholder="Student Name">
+
+    <input type="number" id="marks" placeholder="Marks">
+
+    <br><br>
+
+    <button onclick="saveMarks()">Save</button>
+    <button onclick="showMarks()">Show</button>
+
+    <p id="result"></p>
+
+    <script>
+        function saveMarks() {
+
+            let student = {
+                name: document.getElementById("name").value,
+                marks: document.getElementById("marks").value
+            };
+
+            localStorage.setItem(
+                "studentMarks",
+                JSON.stringify(student)
+            );
+
+            document.getElementById("result").innerText =
+                "Marks saved.";
+        }
+
+        function showMarks() {
+
+            let student = JSON.parse(
+                localStorage.getItem("studentMarks")
+            );
+
+            if (student) {
+
+                document.getElementById("result").innerHTML =
+                    "Student: " + student.name +
+                    "<br>Marks: " + student.marks;
+
+            } else {
+
+                document.getElementById("result").innerText =
+                    "No student record found.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

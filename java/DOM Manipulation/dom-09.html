@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Delete Rows</title>
+</head>
+
+<body>
+
+    <h1>Add and Delete Table Rows</h1>
+
+    <table border="1" id="table">
+        <tr>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <button onclick="addRow()">Add Row</button>
+
+    <script>
+        function addRow() {
+
+            let table = document.getElementById("table");
+
+            let row = table.insertRow();
+
+            let name = row.insertCell(0);
+            let action = row.insertCell(1);
+
+            name.textContent = "New Student";
+
+            action.innerHTML =
+                '<button onclick="this.parentElement.parentElement.remove()">Delete</button>';
+        }
+    </script>
+
+</body>
+
+</html>

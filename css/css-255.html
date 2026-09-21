@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Agent Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            padding: 30px
+        }
+
+        .agents {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .agent {
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        .status {
+            color: green;
+            font-weight: bold
+        }
+
+        @media(max-width:700px) {
+            .agents {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AI Agent Management</h1>
+    <div class="agents">
+        <div class="agent">
+            <h2>Research Agent</h2>
+            <p class="status">● Active</p>
+            <p>12 tasks completed</p>
+        </div>
+        <div class="agent">
+            <h2>Support Agent</h2>
+            <p class="status">● Active</p>
+            <p>45 tasks completed</p>
+        </div>
+        <div class="agent">
+            <h2>Data Agent</h2>
+            <p class="status">● Active</p>
+            <p>28 tasks completed</p>
+        </div>
+    </div>
+</body>
+
+</html>

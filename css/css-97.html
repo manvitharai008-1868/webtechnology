@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Analytics</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #0002;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        .progress {
+            background: #ddd;
+            height: 18px;
+            border-radius: 10px;
+        }
+
+        .progress div {
+            height: 100%;
+            width: 76%;
+            background: #2563eb;
+            border-radius: 10px;
+        }
+
+        @media(max-width:700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Product Analytics</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Active Products</h3>
+            <h2>248</h2>
+        </div>
+
+        <div class="card">
+            <h3>Product Views</h3>
+            <h2>182K</h2>
+        </div>
+
+        <div class="card">
+            <h3>Add to Cart</h3>
+            <h2>18.4K</h2>
+        </div>
+
+        <div class="card">
+            <h3>Purchases</h3>
+            <h2>6.8K</h2>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+        <h2>Product Performance</h2>
+
+        <div class="progress">
+            <div></div>
+        </div>
+
+        <p>76% performance score</p>
+    </div>
+
+</body>
+
+</html>

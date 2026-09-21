@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 143 - AI Confidence Score</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .card {
+            max-width: 600px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .score {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        .bar {
+            height: 15px;
+            background: #ddd;
+            border-radius: 10px;
+        }
+
+        .progress {
+            width: 91%;
+            height: 100%;
+            background: #555;
+            border-radius: 10px;
+        }
+
+        .label {
+            margin-top: 15px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>AI Confidence Score</h1>
+
+        <div class="score">91%</div>
+
+        <div class="bar">
+            <div class="progress"></div>
+        </div>
+
+        <p class="label">
+            Confidence level of the AI-generated result
+        </p>
+
+    </div>
+
+</body>
+
+</html>

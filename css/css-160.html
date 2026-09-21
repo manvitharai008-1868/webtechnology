@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agent Error and Retry</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .error-box {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px #ccc;
+        }
+
+        .error {
+            background: #fee2e2;
+            padding: 15px;
+            border-radius: 8px;
+            color: #991b1b;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="error-box">
+        <h1>AI Agent Error</h1>
+
+        <div class="error">
+            <strong>Error:</strong>
+            <p>The agent could not complete the requested task.</p>
+        </div>
+
+        <button onclick="alert('Retrying task...')">Retry</button>
+    </div>
+
+</body>
+
+</html>

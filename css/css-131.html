@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 131 - AI Smart Suggestions</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .suggestions {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .suggestion {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+            cursor: pointer;
+        }
+
+        .suggestion:hover {
+            transform: translateY(-4px);
+        }
+
+        .icon {
+            font-size: 28px;
+        }
+
+        @media (max-width: 600px) {
+            .suggestions {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>✨ AI Smart Suggestions</h1>
+        <p>Choose a suggestion to get started</p>
+
+        <div class="suggestions">
+
+            <div class="suggestion">
+                <div class="icon">💡</div>
+                <h3>Generate Ideas</h3>
+                <p>Get creative project ideas.</p>
+            </div>
+
+            <div class="suggestion">
+                <div class="icon">📝</div>
+                <h3>Write Content</h3>
+                <p>Create content using AI.</p>
+            </div>
+
+            <div class="suggestion">
+                <div class="icon">📊</div>
+                <h3>Analyze Data</h3>
+                <p>Understand your data easily.</p>
+            </div>
+
+            <div class="suggestion">
+                <div class="icon">💻</div>
+                <h3>Write Code</h3>
+                <p>Get programming assistance.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

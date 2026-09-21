@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restore Data</title>
+</head>
+
+<body>
+
+    <h2>Restore Data After Refresh</h2>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <br><br>
+
+    <button onclick="save()">Save</button>
+
+    <p id="message"></p>
+
+    <script>
+        let input = document.getElementById("name");
+
+        input.value =
+            localStorage.getItem("savedName") || "";
+
+        function save() {
+
+            localStorage.setItem(
+                "savedName",
+                input.value
+            );
+
+            document.getElementById("message").innerText =
+                "Data saved. Refresh the page to test.";
+        }
+    </script>
+
+</body>
+
+</html>

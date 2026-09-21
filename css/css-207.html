@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Usage Meters</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px
+        }
+
+        .box {
+            max-width: 700px;
+            margin: auto
+        }
+
+        .meter {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px
+        }
+
+        .bar {
+            height: 18px;
+            background: #ddd;
+            border-radius: 20px
+        }
+
+        .fill {
+            height: 100%;
+            background: #2563eb;
+            border-radius: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Usage & Consumption</h1>
+        <div class="meter">
+            <h3>Storage 70%</h3>
+            <div class="bar">
+                <div class="fill" style="width:70%"></div>
+            </div>
+        </div>
+        <div class="meter">
+            <h3>API Usage 45%</h3>
+            <div class="bar">
+                <div class="fill" style="width:45%"></div>
+            </div>
+        </div>
+        <div class="meter">
+            <h3>Bandwidth 82%</h3>
+            <div class="bar">
+                <div class="fill" style="width:82%"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

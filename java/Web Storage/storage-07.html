@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array in localStorage</title>
+</head>
+
+<body>
+
+    <h2>Store Array</h2>
+
+    <button onclick="saveArray()">Save Array</button>
+    <button onclick="showArray()">Show Array</button>
+
+    <p id="result"></p>
+
+    <script>
+        function saveArray() {
+
+            let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+            localStorage.setItem(
+                "fruits",
+                JSON.stringify(fruits)
+            );
+
+            document.getElementById("result").innerText =
+                "Array saved!";
+        }
+
+        function showArray() {
+
+            let data = localStorage.getItem("fruits");
+
+            let fruits = JSON.parse(data);
+
+            document.getElementById("result").innerText =
+                fruits.join(", ");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analytics Filter and Sorting</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .panel {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #0002;
+        }
+
+        select,
+        button {
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Analytics Filter & Sorting Panel</h1>
+
+    <div class="panel">
+
+        <label>Category:</label>
+
+        <select>
+            <option>All</option>
+            <option>Sales</option>
+            <option>Users</option>
+            <option>Revenue</option>
+        </select>
+
+        <label>Sort:</label>
+
+        <select>
+            <option>Highest</option>
+            <option>Lowest</option>
+            <option>Newest</option>
+        </select>
+
+        <button onclick="alert('Filters applied!')">
+            Apply Filters
+        </button>
+
+    </div>
+
+</body>
+
+</html>

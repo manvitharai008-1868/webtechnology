@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Transformations</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .scene {
+            width: 250px;
+            height: 200px;
+            margin: 50px auto;
+            perspective: 600px;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(135deg,
+                    #2563eb,
+                    #7c3aed);
+
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: transform 1s;
+        }
+
+        .box:hover {
+            transform:
+                rotateX(30deg) rotateY(40deg) translateZ(50px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS 3D Transformations</h1>
+
+    <div class="scene">
+
+        <div class="box">
+            Hover Me
+        </div>
+
+    </div>
+
+    <p>
+        This example uses perspective, rotateX,
+        rotateY and translateZ.
+    </p>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

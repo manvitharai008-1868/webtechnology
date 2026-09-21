@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Outlier Detection</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .records {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .record {
+            padding: 20px;
+            text-align: center;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .outlier {
+            background: #fee2e2;
+            border: 2px solid #dc2626;
+        }
+
+        @media(max-width: 700px) {
+            .records {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <h1>ML Outlier Detection</h1>
+
+            <div class="records">
+                <div class="record">25</div>
+                <div class="record">31</div>
+                <div class="record">28</div>
+                <div class="record outlier">95<br>Outlier</div>
+                <div class="record">30</div>
+                <div class="record">34</div>
+                <div class="record">27</div>
+                <div class="record">29</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

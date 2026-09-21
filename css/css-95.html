@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Analytics</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f3ff;
+            padding: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #0002;
+        }
+
+        h2 {
+            color: #7c3aed;
+        }
+
+        @media(max-width:700px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>User Analytics</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Total Users</h3>
+            <h2>52,480</h2>
+            <p>+12.5%</p>
+        </div>
+
+        <div class="card">
+            <h3>New Users</h3>
+            <h2>4,280</h2>
+            <p>+18%</p>
+        </div>
+
+        <div class="card">
+            <h3>Active Users</h3>
+            <h2>31,920</h2>
+            <p>+9%</p>
+        </div>
+
+        <div class="card">
+            <h3>Returning Users</h3>
+            <h2>22,610</h2>
+            <p>+6%</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

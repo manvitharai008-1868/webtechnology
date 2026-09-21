@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search and Filter</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            padding: 30px
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            max-width: 900px;
+            margin: auto
+        }
+
+        input,
+        select {
+            padding: 12px;
+            flex: 1
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px
+        }
+
+        @media(max-width:700px) {
+            .cards {
+                grid-template-columns: 1fr
+            }
+
+            .controls {
+                flex-direction: column
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SaaS Products</h1>
+    <div class="controls">
+        <input placeholder="Search products...">
+        <select>
+            <option>All Categories</option>
+            <option>Analytics</option>
+            <option>AI</option>
+        </select>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <h2>Analytics</h2>
+            <p>Business analytics.</p>
+        </div>
+        <div class="card">
+            <h2>AI Assistant</h2>
+            <p>AI productivity.</p>
+        </div>
+        <div class="card">
+            <h2>Reports</h2>
+            <p>Reporting tools.</p>
+        </div>
+    </div>
+</body>
+
+</html>

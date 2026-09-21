@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 146 - AI Agent Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .agents {
+            margin-top: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .agent {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Agent Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Agents</h3>
+                <div class="value">12</div>
+            </div>
+
+            <div class="card">
+                <h3>Active</h3>
+                <div class="value">8</div>
+            </div>
+
+            <div class="card">
+                <h3>Tasks</h3>
+                <div class="value">245</div>
+            </div>
+
+            <div class="card">
+                <h3>Completed</h3>
+                <div class="value">210</div>
+            </div>
+
+        </div>
+
+        <div class="agents">
+
+            <h2>Active Agents</h2>
+
+            <div class="agent">Research Agent — Active</div>
+            <div class="agent">Data Agent — Active</div>
+            <div class="agent">Content Agent — Active</div>
+            <div class="agent">Analytics Agent — Active</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

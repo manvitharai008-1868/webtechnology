@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Auto Save Form</title>
+</head>
+
+<body>
+
+    <h2>Auto-Save Form</h2>
+
+    <textarea id="text" rows="8" cols="40" placeholder="Start typing..."></textarea>
+
+    <p id="message"></p>
+
+    <script>
+        let text = document.getElementById("text");
+
+        text.value =
+            localStorage.getItem("autoText") || "";
+
+        text.addEventListener("input", function () {
+
+            localStorage.setItem(
+                "autoText",
+                text.value
+            );
+
+            document.getElementById("message").innerText =
+                "Automatically saved.";
+        });
+    </script>
+
+</body>
+
+</html>

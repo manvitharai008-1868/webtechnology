@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recommendation Engine</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .recommendations {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        @media(max-width: 700px) {
+            .recommendations {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Recommendation Engine</h1>
+        <p>Recommended items based on user preferences.</p>
+
+        <div class="recommendations">
+
+            <div class="card">
+                <h2>Python Course</h2>
+                <p>Recommended for programming learners.</p>
+                <button>View Recommendation</button>
+            </div>
+
+            <div class="card">
+                <h2>Web Development</h2>
+                <p>Recommended based on your interests.</p>
+                <button>View Recommendation</button>
+            </div>
+
+            <div class="card">
+                <h2>Data Science</h2>
+                <p>Recommended for analytics learners.</p>
+                <button>View Recommendation</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

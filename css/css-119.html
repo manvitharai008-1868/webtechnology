@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Command Bar</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 50px;
+        }
+
+        .command {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #0002;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .command p {
+            padding: 12px;
+            border-radius: 7px;
+        }
+
+        .command p:hover {
+            background: #eef2ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="command">
+
+        <h1>⚡ AI Command Bar</h1>
+
+        <input id="search" placeholder="Type a command..." onkeyup="searchCommands()">
+
+        <div id="commands">
+
+            <p>🔎 Search</p>
+            <p>📊 Open Analytics</p>
+            <p>⚙ Open Settings</p>
+            <p>➕ Create Project</p>
+
+        </div>
+
+    </div>
+
+    <script>
+        function searchCommands() {
+
+            let input =
+                document.getElementById("search")
+                    .value
+                    .toLowerCase();
+
+            let commands =
+                document.querySelectorAll("#commands p");
+
+            commands.forEach(function (command) {
+
+                if (command.innerText
+                    .toLowerCase()
+                    .includes(input)) {
+
+                    command.style.display = "block";
+
+                } else {
+
+                    command.style.display = "none";
+                }
+
+            });
+        }
+    </script>
+
+</body>
+
+</html>

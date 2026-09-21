@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Assistant Interface</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f3ff;
+            padding: 30px;
+        }
+
+        .assistant {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #0002;
+        }
+
+        .answer {
+            background: #f1f5f9;
+            padding: 20px;
+            min-height: 80px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 75%;
+            padding: 12px;
+        }
+
+        button {
+            padding: 12px;
+            background: #7c3aed;
+            color: white;
+            border: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="assistant">
+
+        <h1>🤖 AI Assistant</h1>
+
+        <div class="answer" id="answer">
+            Ask a question to begin.
+        </div>
+
+        <input id="question" placeholder="Ask the assistant...">
+
+        <button onclick="askQuestion()">
+            Ask
+        </button>
+
+    </div>
+
+    <script>
+        function askQuestion() {
+
+            let question =
+                document.getElementById("question").value;
+
+            if (question === "") {
+                document.getElementById("answer").innerText =
+                    "Please enter a question.";
+                return;
+            }
+
+            document.getElementById("answer").innerText =
+                "Assistant response for: " + question;
+        }
+    </script>
+
+</body>
+
+</html>

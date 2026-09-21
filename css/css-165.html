@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Prediction Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .dashboard {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        @media(max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <h1>ML Prediction Dashboard</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Prediction</h3>
+                <div class="value">78%</div>
+            </div>
+
+            <div class="card">
+                <h3>Accuracy</h3>
+                <div class="value">94%</div>
+            </div>
+
+            <div class="card">
+                <h3>Samples</h3>
+                <div class="value">1,250</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

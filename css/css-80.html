@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Timeline</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        .timeline {
+            width: 500px;
+            border-left: 3px solid #2563eb;
+            padding-left: 25px;
+        }
+
+        .event {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .event::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: #2563eb;
+            border-radius: 50%;
+            position: absolute;
+            left: -32px;
+            top: 5px;
+        }
+
+        .event h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Activity History</h2>
+
+    <div class="timeline">
+
+        <div class="event">
+            <h3>Project Created</h3>
+            <p>Project was created successfully.</p>
+            <small>9:00 AM</small>
+        </div>
+
+        <div class="event">
+            <h3>Design Updated</h3>
+            <p>New design was uploaded.</p>
+            <small>11:30 AM</small>
+        </div>
+
+        <div class="event">
+            <h3>Project Completed</h3>
+            <p>The project was completed.</p>
+            <small>4:00 PM</small>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

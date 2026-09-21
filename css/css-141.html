@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 141 - AI Forecasting Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .forecast {
+            margin-top: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .line {
+            height: 15px;
+            margin: 15px 0;
+            background: #ddd;
+            border-radius: 10px;
+        }
+
+        .growth {
+            width: 75%;
+            height: 100%;
+            background: #555;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Forecasting Dashboard</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Current Sales</h3>
+                <div class="value">₹50K</div>
+            </div>
+
+            <div class="card">
+                <h3>Forecast</h3>
+                <div class="value">₹65K</div>
+            </div>
+
+            <div class="card">
+                <h3>Growth</h3>
+                <div class="value">30%</div>
+            </div>
+
+        </div>
+
+        <div class="forecast">
+
+            <h2>Forecast Overview</h2>
+
+            <p>Expected growth</p>
+
+            <div class="line">
+                <div class="growth"></div>
+            </div>
+
+            <p>AI-based forecast for the upcoming period.</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

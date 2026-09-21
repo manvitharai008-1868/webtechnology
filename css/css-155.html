@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 155 - AI Agent Builder</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .builder {
+            display: grid;
+            grid-template-columns: 220px 1fr 260px;
+            min-height: 100vh;
+        }
+
+        .panel {
+            background: white;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .panel h2 {
+            margin-top: 0;
+        }
+
+        .item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f1f1f1;
+            border-radius: 8px;
+        }
+
+        .canvas {
+            padding: 40px;
+            background: #f5f7fb;
+        }
+
+        .node {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+            text-align: center;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #333;
+            color: white;
+        }
+
+        @media (max-width: 850px) {
+            .builder {
+                grid-template-columns: 1fr;
+            }
+
+            .panel {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="builder">
+
+        <!-- Left Panel -->
+        <aside class="panel">
+
+            <h2>Components</h2>
+
+            <div class="item">Input</div>
+            <div class="item">AI Model</div>
+            <div class="item">Condition</div>
+            <div class="item">Output</div>
+
+        </aside>
+
+        <!-- Canvas -->
+        <main class="canvas">
+
+            <h1>AI Agent Builder</h1>
+
+            <div class="node">
+                <h3>Input</h3>
+                <p>User Request</p>
+            </div>
+
+            <div class="node">
+                <h3>AI Processing</h3>
+                <p>Analyze and process the request</p>
+            </div>
+
+            <div class="node">
+                <h3>Output</h3>
+                <p>Generate response</p>
+            </div>
+
+        </main>
+
+        <!-- Settings -->
+        <aside class="panel">
+
+            <h2>Agent Settings</h2>
+
+            <label>Agent Name</label>
+            <input type="text" placeholder="My AI Agent">
+
+            <label>Model</label>
+
+            <select>
+                <option>AI Model 1</option>
+                <option>AI Model 2</option>
+                <option>AI Model 3</option>
+            </select>
+
+            <button>Save Agent</button>
+
+        </aside>
+
+    </div>
+
+</body>
+
+</html>

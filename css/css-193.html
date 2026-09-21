@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Developer Settings</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef2f7;
+            padding: 30px
+        }
+
+        .box {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 11px;
+            margin-top: 6px;
+            box-sizing: border-box
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            border: 0;
+            border-radius: 6px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Developer Settings</h1>
+        <label>Environment</label>
+        <select>
+            <option>Production</option>
+            <option>Development</option>
+        </select>
+        <label>Project Name</label>
+        <input type="text" value="My SaaS Project">
+        <label>API Endpoint</label>
+        <input type="text" value="https://api.example.com">
+        <button>Save Settings</button>
+    </div>
+</body>
+
+</html>

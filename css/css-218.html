@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Charts</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px
+        }
+
+        .chart {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        .bars {
+            display: flex;
+            align-items: end;
+            gap: 15px;
+            height: 300px
+        }
+
+        .bar {
+            flex: 1;
+            background: #2563eb;
+            color: white;
+            text-align: center
+        }
+
+        @media(max-width:600px) {
+            .bars {
+                height: 200px;
+                gap: 5px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chart">
+        <h1>Responsive Chart</h1>
+        <div class="bars">
+            <div class="bar" style="height:40%">40</div>
+            <div class="bar" style="height:65%">65</div>
+            <div class="bar" style="height:50%">50</div>
+            <div class="bar" style="height:85%">85</div>
+            <div class="bar" style="height:70%">70</div>
+        </div>
+    </div>
+</body>
+
+</html>

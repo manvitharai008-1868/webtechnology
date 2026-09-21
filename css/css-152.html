@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 152 - AI Agent Execution History</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .history {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #f1f1f1;
+        }
+
+        .status {
+            padding: 6px 10px;
+            border-radius: 15px;
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Agent Execution History</h1>
+
+        <div class="history">
+
+            <table>
+
+                <tr>
+                    <th>Agent</th>
+                    <th>Task</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Research Agent</td>
+                    <td>Research Topic</td>
+                    <td>10:30 AM</td>
+                    <td><span class="status">Completed</span></td>
+                </tr>
+
+                <tr>
+                    <td>Data Agent</td>
+                    <td>Analyze Dataset</td>
+                    <td>10:45 AM</td>
+                    <td><span class="status">Completed</span></td>
+                </tr>
+
+                <tr>
+                    <td>Report Agent</td>
+                    <td>Generate Report</td>
+                    <td>11:00 AM</td>
+                    <td><span class="status">Running</span></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

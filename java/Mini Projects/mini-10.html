@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 30px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        li {
+            list-style: none;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Expense Tracker</h1>
+
+    <input type="text" id="name" placeholder="Expense name">
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <button onclick="addExpense()">Add Expense</button>
+
+    <ul id="expenses"></ul>
+
+    <h2>Total: ₹<span id="total">0</span></h2>
+
+    <script>
+
+        let total = 0;
+
+        function addExpense() {
+
+            let name = document.getElementById("name").value;
+            let amount = Number(document.getElementById("amount").value);
+
+            if (name === "" || amount <= 0) {
+                alert("Enter valid expense details");
+                return;
+            }
+
+            total += amount;
+
+            let li = document.createElement("li");
+
+            li.innerHTML = name + " - ₹" + amount;
+
+            document.getElementById("expenses").appendChild(li);
+
+            document.getElementById("total").innerHTML = total;
+
+            document.getElementById("name").value = "";
+            document.getElementById("amount").value = "";
+        }
+
+    </script>
+
+</body>
+
+</html>

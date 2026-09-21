@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 134 - AI Data Analysis</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .analysis {
+            margin-top: 25px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Data Analysis</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Records</h3>
+                <div class="number">2,540</div>
+            </div>
+
+            <div class="card">
+                <h3>Average Value</h3>
+                <div class="number">78%</div>
+            </div>
+
+            <div class="card">
+                <h3>Data Quality</h3>
+                <div class="number">94%</div>
+            </div>
+
+        </div>
+
+        <div class="analysis">
+
+            <h2>AI Analysis</h2>
+
+            <p>
+                The data shows a positive overall trend with high data quality.
+                The analysis can help identify patterns and support decisions.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .image {
+            width: 220px;
+            height: 150px;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .blur {
+            filter: blur(4px);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .brightness {
+            filter: brightness(150%);
+        }
+
+        .contrast {
+            filter: contrast(180%);
+        }
+
+        .opacity {
+            filter: opacity(40%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Filters</h1>
+
+    <img class="image blur" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Blur">
+
+    <img class="image grayscale" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Grayscale">
+
+    <img class="image brightness" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Brightness">
+
+    <img class="image contrast" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Contrast">
+
+    <img class="image opacity" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Opacity">
+
+    <br><br>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

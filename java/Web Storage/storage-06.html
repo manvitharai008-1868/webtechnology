@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiple Values</title>
+</head>
+
+<body>
+
+    <h2>Student Details</h2>
+
+    <input type="text" id="name" placeholder="Name">
+    <br><br>
+
+    <input type="text" id="course" placeholder="Course">
+    <br><br>
+
+    <button onclick="saveData()">Save</button>
+    <button onclick="showData()">Show</button>
+
+    <p id="result"></p>
+
+    <script>
+        function saveData() {
+
+            localStorage.setItem(
+                "studentName",
+                document.getElementById("name").value
+            );
+
+            localStorage.setItem(
+                "course",
+                document.getElementById("course").value
+            );
+
+            document.getElementById("result").innerText =
+                "Data saved!";
+        }
+
+        function showData() {
+
+            let name = localStorage.getItem("studentName");
+            let course = localStorage.getItem("course");
+
+            document.getElementById("result").innerHTML =
+                "Name: " + name +
+                "<br>Course: " + course;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mega Navigation Menu</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px 40px;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .mega {
+            position: relative;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background: white;
+            width: 500px;
+            padding: 25px;
+            box-shadow: 0 5px 15px #aaa;
+        }
+
+        .mega:hover .menu {
+            display: flex;
+            gap: 50px;
+        }
+
+        .menu h3 {
+            color: #333;
+        }
+
+        .menu a {
+            display: block;
+            color: #555;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+
+        <div class="mega">
+            <a href="#">Products ▼</a>
+
+            <div class="menu">
+                <div>
+                    <h3>Products</h3>
+                    <a href="#">Analytics</a>
+                    <a href="#">Dashboard</a>
+                    <a href="#">Reports</a>
+                </div>
+
+                <div>
+                    <h3>Services</h3>
+                    <a href="#">Support</a>
+                    <a href="#">Consulting</a>
+                    <a href="#">Training</a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</body>
+
+</html>

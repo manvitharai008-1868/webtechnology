@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Position</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .image {
+            width: 300px;
+            height: 200px;
+            border: 3px solid blue;
+            margin: 20px;
+        }
+
+        .cover {
+            object-fit: cover;
+        }
+
+        .contain {
+            object-fit: contain;
+            background: lightgray;
+        }
+
+        .position {
+            object-fit: cover;
+            object-position: top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Object-Fit and Object-Position</h1>
+
+    <h2>Object Fit: Cover</h2>
+
+    <img class="image cover" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Nature">
+
+    <h2>Object Fit: Contain</h2>
+
+    <img class="image contain" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Nature">
+
+    <h2>Object Position: Top</h2>
+
+    <img class="image position" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Nature">
+
+    <br>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

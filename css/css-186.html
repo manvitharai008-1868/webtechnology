@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Management</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #2563eb;
+            color: white;
+        }
+
+        button {
+            padding: 7px 12px;
+            border: none;
+            border-radius: 5px;
+            background: #2563eb;
+            color: white;
+        }
+
+        @media(max-width:600px) {
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>User Management</h1>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>Alex</td>
+                <td>alex@example.com</td>
+                <td>Admin</td>
+                <td><button>Edit</button></td>
+            </tr>
+
+            <tr>
+                <td>Sarah</td>
+                <td>sarah@example.com</td>
+                <td>User</td>
+                <td><button>Edit</button></td>
+            </tr>
+
+            <tr>
+                <td>John</td>
+                <td>john@example.com</td>
+                <td>User</td>
+                <td><button>Edit</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

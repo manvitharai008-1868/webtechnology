@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popover</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 50px;
+        }
+
+        .popover {
+            position: relative;
+            display: inline-block;
+        }
+
+        .content {
+            display: none;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            width: 220px;
+            padding: 15px;
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 5px 15px #ccc;
+            border-radius: 8px;
+        }
+
+        .popover:hover .content {
+            display: block;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="popover">
+
+        <button>More Information</button>
+
+        <div class="content">
+            <h3>Popover</h3>
+            <p>This is additional information.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

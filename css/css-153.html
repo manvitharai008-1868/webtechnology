@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 153 - AI Agent Timeline</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+        }
+
+        .timeline {
+            border-left: 3px solid #555;
+            padding-left: 25px;
+        }
+
+        .event {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+            position: relative;
+        }
+
+        .event::before {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background: #555;
+            border-radius: 50%;
+            position: absolute;
+            left: -33px;
+            top: 25px;
+        }
+
+        .time {
+            color: #777;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Agent Execution Timeline</h1>
+
+        <div class="timeline">
+
+            <div class="event">
+                <h3>Task Started</h3>
+                <p>AI agent started processing the request.</p>
+                <span class="time">10:00 AM</span>
+            </div>
+
+            <div class="event">
+                <h3>Data Processing</h3>
+                <p>Agent processed the required information.</p>
+                <span class="time">10:05 AM</span>
+            </div>
+
+            <div class="event">
+                <h3>Task Completed</h3>
+                <p>Agent completed the requested task.</p>
+                <span class="time">10:12 AM</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

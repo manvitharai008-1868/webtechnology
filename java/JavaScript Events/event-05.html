@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouse Move</title>
+</head>
+
+<body>
+
+    <h1>Mouse Move Event</h1>
+
+    <div id="area" style="height:200px;border:2px solid black;">
+        Move your mouse inside this box
+    </div>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("area").onmousemove = function (event) {
+
+            document.getElementById("result").innerHTML =
+                "X: " + event.clientX +
+                " | Y: " + event.clientY;
+        };
+    </script>
+
+</body>
+
+</html>

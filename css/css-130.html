@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 130 - AI Autocomplete Interface</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 80px auto;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        input {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .suggestions {
+            background: white;
+            border-radius: 10px;
+            margin-top: 5px;
+            box-shadow: 0 4px 15px #ddd;
+            overflow: hidden;
+        }
+
+        .suggestion {
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+        }
+
+        .suggestion:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Autocomplete</h1>
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Start typing...">
+
+            <div class="suggestions">
+
+                <div class="suggestion">Artificial Intelligence</div>
+                <div class="suggestion">Artificial Intelligence Projects</div>
+                <div class="suggestion">Artificial Intelligence Course</div>
+                <div class="suggestion">Artificial Intelligence Applications</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

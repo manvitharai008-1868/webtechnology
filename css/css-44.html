@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pill Navigation</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+        }
+
+        .pills {
+            display: flex;
+            gap: 10px;
+        }
+
+        .pill {
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: #eee;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .pill.active {
+            background: #2563eb;
+            color: white;
+        }
+
+        .pill:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Pill Navigation</h2>
+
+    <div class="pills">
+        <a class="pill active" href="#">All</a>
+        <a class="pill" href="#">Design</a>
+        <a class="pill" href="#">Development</a>
+        <a class="pill" href="#">Marketing</a>
+    </div>
+
+</body>
+
+</html>

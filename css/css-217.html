@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Analytics Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 20px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        .big {
+            font-size: 30px;
+            font-weight: bold
+        }
+
+        @media(max-width:800px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:500px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Analytics Dashboard</h1>
+    <div class="grid">
+        <div class="card">
+            <h3>Visitors</h3>
+            <div class="big">25K</div>
+        </div>
+        <div class="card">
+            <h3>Conversions</h3>
+            <div class="big">4.8K</div>
+        </div>
+        <div class="card">
+            <h3>Revenue</h3>
+            <div class="big">₹72K</div>
+        </div>
+        <div class="card">
+            <h3>Sessions</h3>
+            <div class="big">18K</div>
+        </div>
+        <div class="card">
+            <h3>Bounce Rate</h3>
+            <div class="big">32%</div>
+        </div>
+        <div class="card">
+            <h3>Growth</h3>
+            <div class="big">21%</div>
+        </div>
+    </div>
+</body>
+
+</html>

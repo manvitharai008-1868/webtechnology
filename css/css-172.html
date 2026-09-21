@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Anomaly Alert</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f7fa;
+            padding: 30px;
+        }
+
+        .alert {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-left: 6px solid #dc2626;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .warning {
+            background: #fee2e2;
+            padding: 15px;
+            border-radius: 8px;
+            color: #991b1b;
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="alert">
+        <h1>⚠ ML Anomaly Alert</h1>
+
+        <div class="warning">
+            <strong>Anomaly Detected</strong>
+            <p>Unusual activity has been detected by the ML model.</p>
+        </div>
+
+        <p>Detected Value:</p>
+        <div class="value">98.7</div>
+
+        <p>Expected Range: 20 - 70</p>
+    </div>
+
+</body>
+
+</html>

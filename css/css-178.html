@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Model Monitoring</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .dashboard {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .value {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        @media(max-width:700px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>ML Model Monitoring</h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Accuracy</h3>
+                <div class="value">94%</div>
+            </div>
+
+            <div class="card">
+                <h3>Latency</h3>
+                <div class="value">120ms</div>
+            </div>
+
+            <div class="card">
+                <h3>Predictions</h3>
+                <div class="value">12K</div>
+            </div>
+
+            <div class="card">
+                <h3>Status</h3>
+                <div class="value">Healthy</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

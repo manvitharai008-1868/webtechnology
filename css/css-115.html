@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analytics Report and Export</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .report {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #0002;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Analytics Report</h1>
+
+    <div class="report">
+
+        <h2>September 2026 Report</h2>
+
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Value</th>
+            </tr>
+
+            <tr>
+                <td>Revenue</td>
+                <td>₹18.4L</td>
+            </tr>
+
+            <tr>
+                <td>Users</td>
+                <td>42,840</td>
+            </tr>
+
+            <tr>
+                <td>Orders</td>
+                <td>5,420</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <button onclick="downloadReport()">
+            Export CSV
+        </button>
+
+    </div>
+
+    <script>
+        function downloadReport() {
+
+            let data =
+                "Metric,Value\n" +
+                "Revenue,1840000\n" +
+                "Users,42840\n" +
+                "Orders,5420";
+
+            let file = new Blob([data], {
+                type: "text/csv"
+            });
+
+            let link = document.createElement("a");
+
+            link.href = URL.createObjectURL(file);
+            link.download = "analytics-report.csv";
+
+            link.click();
+        }
+    </script>
+
+</body>
+
+</html>

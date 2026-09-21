@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Sidebar Drawer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .drawer {
+            position: fixed;
+            left: 0;
+            top: 0;
+
+            width: 250px;
+            height: 100vh;
+
+            background: #111827;
+
+            padding: 30px 20px;
+        }
+
+        .drawer h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .drawer a {
+            display: block;
+            color: #d1d5db;
+            text-decoration: none;
+            padding: 15px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+        }
+
+        .drawer a:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        .content {
+            margin-left: 280px;
+            padding: 40px;
+        }
+
+        @media (max-width: 600px) {
+
+            .drawer {
+                width: 200px;
+            }
+
+            .content {
+                margin-left: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside class="drawer">
+
+        <h2>Menu</h2>
+
+        <a href="#">Home</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+
+    </aside>
+
+    <main class="content">
+
+        <h1>Mobile Navigation Drawer</h1>
+
+        <p>
+            This page demonstrates a sidebar navigation drawer.
+        </p>
+
+    </main>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

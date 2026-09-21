@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Functions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .calc-box {
+            width: calc(100% - 40px);
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        .min-box {
+            width: min(500px, 90%);
+            padding: 20px;
+            background-color: lightgreen;
+            margin-top: 20px;
+        }
+
+        .max-box {
+            width: max(300px, 50%);
+            padding: 20px;
+            background-color: lightyellow;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: clamp(24px, 5vw, 50px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Functions</h1>
+
+    <div class="calc-box">
+        <h2>calc()</h2>
+        <p>
+            Width is calculated using calc(100% - 40px).
+        </p>
+    </div>
+
+    <div class="min-box">
+        <h2>min()</h2>
+        <p>
+            The width uses the smaller value.
+        </p>
+    </div>
+
+    <div class="max-box">
+        <h2>max()</h2>
+        <p>
+            The width uses the larger value.
+        </p>
+    </div>
+
+    <br>
+
+    <p>
+        The heading uses clamp() to create a responsive font size.
+    </p>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

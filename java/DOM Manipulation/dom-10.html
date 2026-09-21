@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search and Filter</title>
+</head>
+
+<body>
+
+    <h1>Search Student Records</h1>
+
+    <input type="text" id="search" placeholder="Search..." onkeyup="searchStudents()">
+
+    <ul id="students">
+        <li>Manvitha</li>
+        <li>Rahul</li>
+        <li>Anu</li>
+        <li>Priya</li>
+        <li>Ravi</li>
+    </ul>
+
+    <script>
+        function searchStudents() {
+
+            let search =
+                document.getElementById("search").value.toLowerCase();
+
+            let students =
+                document.querySelectorAll("#students li");
+
+            students.forEach(function (student) {
+
+                let name = student.textContent.toLowerCase();
+
+                student.style.display =
+                    name.includes(search) ? "" : "none";
+            });
+        }
+    </script>
+
+</body>
+
+</html>

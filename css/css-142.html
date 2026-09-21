@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 142 - Anomaly Detection</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .status {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 12px #ddd;
+        }
+
+        .alert {
+            background: #f1f1f1;
+            padding: 18px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        .normal {
+            border-left: 5px solid #777;
+        }
+
+        .warning {
+            border-left: 5px solid #333;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Anomaly Detection Dashboard</h1>
+
+        <div class="status">
+            <h3>Total Records</h3>
+            <div class="number">5,420</div>
+        </div>
+
+        <div class="status">
+            <h3>Anomalies Detected</h3>
+            <div class="number">12</div>
+        </div>
+
+        <div class="status">
+
+            <h2>Recent Detection</h2>
+
+            <div class="alert warning">
+                <strong>Potential anomaly detected</strong>
+                <p>Unusual activity was detected in the recent dataset.</p>
+            </div>
+
+            <div class="alert normal">
+                <strong>System Status</strong>
+                <p>Most records are within the expected range.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

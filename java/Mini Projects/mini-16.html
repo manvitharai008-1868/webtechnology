@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Currency Converter</title>
+</head>
+
+<body>
+
+    <h1>Currency Converter</h1>
+
+    <input type="number" id="amount" placeholder="Amount in USD">
+
+    <button onclick="convert()">Convert to INR</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+
+        function convert() {
+
+            let amount =
+                Number(document.getElementById("amount").value);
+
+            // Example fixed conversion rate for demonstration
+            let rate = 83;
+
+            let result = amount * rate;
+
+            document.getElementById("result").innerHTML =
+                "₹" + result.toFixed(2);
+        }
+
+    </script>
+
+</body>
+
+</html>

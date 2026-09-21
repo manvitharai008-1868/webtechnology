@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Theme Switcher</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: white;
+            color: #111;
+            margin: 0;
+            transition: .3s
+        }
+
+        body:has(#dark:checked) {
+            background: #111827;
+            color: white
+        }
+
+        .box {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 30px;
+            text-align: center
+        }
+
+        input {
+            margin: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Theme Switcher</h1>
+        <p>Choose your preferred theme.</p>
+        <label>
+            <input type="checkbox" id="dark">
+            Dark Mode
+        </label>
+    </div>
+</body>
+
+</html>

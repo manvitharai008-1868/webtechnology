@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alert Confirm Prompt</title>
+</head>
+
+<body>
+
+    <h2>Browser Dialog Boxes</h2>
+
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="showConfirm()">Confirm</button>
+    <button onclick="showPrompt()">Prompt</button>
+
+    <p id="result"></p>
+
+    <script>
+        function showAlert() {
+            alert("Hello! Welcome to JavaScript.");
+        }
+
+        function showConfirm() {
+
+            let result = confirm("Do you want to continue?");
+
+            if (result) {
+                document.getElementById("result").innerText =
+                    "You selected OK.";
+            } else {
+                document.getElementById("result").innerText =
+                    "You selected Cancel.";
+            }
+        }
+
+        function showPrompt() {
+
+            let name = prompt("Enter your name:");
+
+            if (name) {
+                document.getElementById("result").innerText =
+                    "Hello, " + name + "!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

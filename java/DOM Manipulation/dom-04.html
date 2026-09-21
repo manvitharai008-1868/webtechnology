@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiple Elements</title>
+</head>
+
+<body>
+
+    <h1>Manipulate Multiple Elements</h1>
+
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p class="item">Item 3</p>
+
+    <button onclick="changeItems()">Change All</button>
+
+    <script>
+        function changeItems() {
+            let items = document.getElementsByClassName("item");
+
+            for (let i = 0; i < items.length; i++) {
+                items[i].style.color = "green";
+                items[i].style.fontWeight = "bold";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 149 - Agent Status Monitoring</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .monitor {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status {
+            padding: 7px 14px;
+            border-radius: 20px;
+            background: #eee;
+        }
+
+        .bar {
+            height: 10px;
+            background: #ddd;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .progress {
+            height: 100%;
+            background: #555;
+            border-radius: 10px;
+        }
+
+        .p80 {
+            width: 80%;
+        }
+
+        .p60 {
+            width: 60%;
+        }
+
+        .p95 {
+            width: 95%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Agent Status Monitoring</h1>
+
+        <div class="monitor">
+
+            <div class="row">
+                <strong>Research Agent</strong>
+                <span class="status">Running</span>
+            </div>
+
+            <div class="bar">
+                <div class="progress p80"></div>
+            </div>
+
+        </div>
+
+        <div class="monitor">
+
+            <div class="row">
+                <strong>Data Agent</strong>
+                <span class="status">Running</span>
+            </div>
+
+            <div class="bar">
+                <div class="progress p60"></div>
+            </div>
+
+        </div>
+
+        <div class="monitor">
+
+            <div class="row">
+                <strong>Content Agent</strong>
+                <span class="status">Completed</span>
+            </div>
+
+            <div class="bar">
+                <div class="progress p95"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

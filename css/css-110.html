@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Visualization Cards</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #0002;
+        }
+
+        .progress {
+            height: 18px;
+            background: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress div {
+            height: 100%;
+            background: #2563eb;
+        }
+
+        .p1 {
+            width: 84%;
+        }
+
+        .p2 {
+            width: 62%;
+        }
+
+        .p3 {
+            width: 74%;
+        }
+
+        @media(max-width:700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Data Visualization Cards</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Traffic</h3>
+            <h2>84K</h2>
+            <div class="progress">
+                <div class="p1"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Conversion</h3>
+            <h2>7.8%</h2>
+            <div class="progress">
+                <div class="p2"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Revenue</h3>
+            <h2>₹12.4L</h2>
+            <div class="progress">
+                <div class="p3"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

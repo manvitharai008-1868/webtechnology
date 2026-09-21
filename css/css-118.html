@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Chat Sidebar</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            height: 500px;
+        }
+
+        aside {
+            background: #172033;
+            color: white;
+            padding: 25px;
+        }
+
+        aside p {
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        aside p:hover {
+            background: #334155;
+        }
+
+        main {
+            padding: 30px;
+            background: #f8fafc;
+        }
+
+        input {
+            padding: 12px;
+            width: 70%;
+        }
+
+        button {
+            padding: 12px;
+            background: #2563eb;
+            color: white;
+            border: none;
+        }
+
+        @media(max-width:700px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside>
+
+            <h2>🤖 AI Chats</h2>
+
+            <p>Project Help</p>
+            <p>Analytics</p>
+            <p>Python</p>
+            <p>Web Development</p>
+
+            <button>+ New Chat</button>
+
+        </aside>
+
+        <main>
+
+            <h1>Project Help</h1>
+
+            <p>
+                <b>AI:</b>
+                How can I help with your project?
+            </p>
+
+            <input placeholder="Message...">
+
+            <button>Send</button>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

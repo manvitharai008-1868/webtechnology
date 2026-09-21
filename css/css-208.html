@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Token Usage</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px
+        }
+
+        .dashboard {
+            max-width: 800px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px
+        }
+
+        .value {
+            font-size: 30px;
+            font-weight: bold
+        }
+
+        @media(max-width:700px) {
+            .dashboard {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center">AI Token & Credit Usage</h1>
+    <div class="dashboard">
+        <div class="card">
+            <h3>Tokens Used</h3>
+            <div class="value">85K</div>
+        </div>
+        <div class="card">
+            <h3>Credits Used</h3>
+            <div class="value">420</div>
+        </div>
+        <div class="card">
+            <h3>Credits Left</h3>
+            <div class="value">580</div>
+        </div>
+    </div>
+</body>
+
+</html>

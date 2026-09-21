@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Object in localStorage</title>
+</head>
+
+<body>
+
+    <h2>Store Object</h2>
+
+    <button onclick="saveObject()">Save Object</button>
+    <button onclick="showObject()">Show Object</button>
+
+    <p id="result"></p>
+
+    <script>
+        function saveObject() {
+
+            let student = {
+                name: "Manvitha",
+                course: "B.Tech",
+                year: 2
+            };
+
+            localStorage.setItem(
+                "student",
+                JSON.stringify(student)
+            );
+
+            document.getElementById("result").innerText =
+                "Object saved!";
+        }
+
+        function showObject() {
+
+            let data = localStorage.getItem("student");
+
+            let student = JSON.parse(data);
+
+            document.getElementById("result").innerHTML =
+                "Name: " + student.name +
+                "<br>Course: " + student.course +
+                "<br>Year: " + student.year;
+        }
+    </script>
+
+</body>
+
+</html>

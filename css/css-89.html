@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SaaS Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: white;
+            padding: 20px 30px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            min-height: 90vh;
+        }
+
+        aside {
+            background: #222;
+            color: white;
+            padding: 25px;
+        }
+
+        aside a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My SaaS Dashboard</h2>
+    </header>
+
+    <div class="container">
+
+        <aside>
+            <h3>Menu</h3>
+
+            <a href="#">Dashboard</a>
+            <a href="#">Projects</a>
+            <a href="#">Analytics</a>
+            <a href="#">Settings</a>
+        </aside>
+
+        <main>
+
+            <h1>Dashboard</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <h2>12,540</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <h2>₹2,50,000</h2>
+                </div>
+
+                <div class="card">
+                    <h3>Projects</h3>
+                    <h2>245</h2>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

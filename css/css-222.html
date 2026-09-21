@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mobile First SaaS</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f1f5f9
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 18px
+        }
+
+        main {
+            padding: 15px
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px
+        }
+
+        @media(min-width:700px) {
+            main {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px
+            }
+
+            .card {
+                margin: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SaaS App</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Analytics</h2>
+            <p>View analytics.</p>
+        </div>
+        <div class="card">
+            <h2>Projects</h2>
+            <p>Manage projects.</p>
+        </div>
+        <div class="card">
+            <h2>Team</h2>
+            <p>Manage team members.</p>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Subscription Upgrade</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px
+        }
+
+        .plans {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            gap: 20px
+        }
+
+        .plan {
+            background: white;
+            padding: 25px;
+            flex: 1;
+            text-align: center;
+            border-radius: 12px
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: 0;
+            border-radius: 6px
+        }
+
+        @media(max-width:700px) {
+            .plans {
+                flex-direction: column
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="plans">
+        <div class="plan">
+            <h2>Basic</h2>
+            <p>₹499/month</p><button>Downgrade</button>
+        </div>
+        <div class="plan">
+            <h2>Pro</h2>
+            <p>₹999/month</p><button>Current Plan</button>
+        </div>
+        <div class="plan">
+            <h2>Enterprise</h2>
+            <p>₹1999/month</p><button>Upgrade</button>
+        </div>
+    </div>
+</body>
+
+</html>

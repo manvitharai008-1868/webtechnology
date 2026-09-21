@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive SaaS Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f1f5f9
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 20px
+        }
+
+        main {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px
+        }
+
+        @media(max-width:800px) {
+            main {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width:500px) {
+            main {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SaaS Dashboard</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h3>Users</h3>
+            <h2>2,450</h2>
+        </div>
+        <div class="card">
+            <h3>Revenue</h3>
+            <h2>₹85K</h2>
+        </div>
+        <div class="card">
+            <h3>Orders</h3>
+            <h2>1,240</h2>
+        </div>
+        <div class="card">
+            <h3>Growth</h3>
+            <h2>18%</h2>
+        </div>
+    </main>
+</body>
+
+</html>

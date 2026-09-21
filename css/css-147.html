@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 147 - AI Agent List</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .agent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            margin: 12px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .info h3 {
+            margin: 0 0 5px;
+        }
+
+        .status {
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Agent List</h1>
+
+        <div class="agent">
+            <div class="info">
+                <h3>Research Agent</h3>
+                <p>Performs research tasks</p>
+            </div>
+            <span class="status">Active</span>
+        </div>
+
+        <div class="agent">
+            <div class="info">
+                <h3>Data Agent</h3>
+                <p>Analyzes datasets</p>
+            </div>
+            <span class="status">Active</span>
+        </div>
+
+        <div class="agent">
+            <div class="info">
+                <h3>Content Agent</h3>
+                <p>Creates content</p>
+            </div>
+            <span class="status">Idle</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

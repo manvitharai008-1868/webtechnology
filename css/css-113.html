@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customizable Dashboard Widgets</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .widgets {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .widget {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #0002;
+        }
+
+        button {
+            padding: 10px 15px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 7px;
+        }
+
+        @media(max-width:700px) {
+            .widgets {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Customizable Dashboard Widgets</h1>
+
+    <div class="widgets" id="widgets">
+
+        <div class="widget">
+            <h3>Revenue</h3>
+            <h2>₹8.4L</h2>
+        </div>
+
+        <div class="widget">
+            <h3>Users</h3>
+            <h2>12,420</h2>
+        </div>
+
+        <div class="widget">
+            <h3>Orders</h3>
+            <h2>1,820</h2>
+        </div>
+
+    </div>
+
+    <br>
+
+    <button onclick="addWidget()">
+        + Add Widget
+    </button>
+
+    <script>
+        function addWidget() {
+
+            let widget = document.createElement("div");
+
+            widget.className = "widget";
+
+            widget.innerHTML = `
+        <h3>New Widget</h3>
+        <p>Custom metric</p>
+    `;
+
+            document.getElementById("widgets").appendChild(widget);
+        }
+    </script>
+
+</body>
+
+</html>

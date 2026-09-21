@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Final SaaS Projects</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f1f5f9
+        }
+
+        header {
+            padding: 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px
+        }
+
+        .project {
+            background: white;
+            padding: 25px;
+            border-radius: 12px
+        }
+
+        @media(max-width:700px) {
+            .projects {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SaaS Web Projects</h1>
+        <p>Modern web application components</p>
+    </header>
+    <div class="projects">
+        <div class="project">
+            <h2>Dashboard</h2>
+            <p>Business dashboard.</p>
+        </div>
+        <div class="project">
+            <h2>Analytics</h2>
+            <p>Analytics interface.</p>
+        </div>
+        <div class="project">
+            <h2>AI Platform</h2>
+            <p>AI-powered application.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ML Data Drift Monitoring</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .bar {
+            height: 18px;
+            background: #e5e7eb;
+            border-radius: 20px;
+        }
+
+        .fill {
+            height: 100%;
+            background: #f59e0b;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>ML Data Drift Monitoring</h1>
+
+        <div class="feature">
+            <h3>Age Feature</h3>
+            <p>Drift: 25%</p>
+            <div class="bar">
+                <div class="fill" style="width:25%"></div>
+            </div>
+        </div>
+
+        <div class="feature">
+            <h3>Income Feature</h3>
+            <p>Drift: 42%</p>
+            <div class="bar">
+                <div class="fill" style="width:42%"></div>
+            </div>
+        </div>
+
+        <div class="feature">
+            <h3>Usage Feature</h3>
+            <p>Drift: 15%</p>
+            <div class="bar">
+                <div class="fill" style="width:15%"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

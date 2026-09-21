@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration</title>
+</head>
+
+<body>
+
+    <h2>Student Registration</h2>
+
+    <form onsubmit="return validateForm()">
+
+        Name:
+        <input type="text" id="name">
+        <br><br>
+
+        Email:
+        <input type="email" id="email">
+        <br><br>
+
+        Age:
+        <input type="number" id="age">
+        <br><br>
+
+        Password:
+        <input type="password" id="password">
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+        function validateForm() {
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let age = document.getElementById("age").value;
+            let password = document.getElementById("password").value;
+
+            if (name === "" || email === "" || age === "" || password === "") {
+                document.getElementById("message").innerText =
+                    "Please fill all fields.";
+                return false;
+            }
+
+            document.getElementById("message").innerText =
+                "Registration successful!";
+
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>

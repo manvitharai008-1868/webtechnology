@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Keyframe Animation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background: blue;
+            margin: 50px auto;
+
+            animation: moveBox 3s infinite alternate;
+        }
+
+        @keyframes moveBox {
+
+            0% {
+                transform: translateX(-200px);
+                background-color: blue;
+            }
+
+            50% {
+                transform: translateX(0);
+                background-color: green;
+            }
+
+            100% {
+                transform: translateX(200px);
+                background-color: red;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Keyframe Animation</h1>
+
+    <div class="box"></div>
+
+    <p>
+        The box changes position and color using @keyframes.
+    </p>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Automation Workflow Builder</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8fafc;
+            padding: 30px;
+        }
+
+        .builder {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #2563eb;
+            text-align: center;
+        }
+
+        .arrow {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="builder">
+        <h1>Automation Workflow Builder</h1>
+
+        <div class="flow">
+            <div class="block">
+                <strong>Trigger</strong>
+                <p>New Email</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="block">
+                <strong>Action</strong>
+                <p>Analyze Email</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="block">
+                <strong>Action</strong>
+                <p>Send Reply</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

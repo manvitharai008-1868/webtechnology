@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Command Palette</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 40px
+        }
+
+        .palette {
+            max-width: 500px;
+            margin: 80px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px #bbb
+        }
+
+        input {
+            width: 100%;
+            padding: 18px;
+            border: 0;
+            border-bottom: 1px solid #ddd;
+            box-sizing: border-box;
+            font-size: 16px
+        }
+
+        .item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee
+        }
+
+        .item:hover {
+            background: #f1f5f9
+        }
+    </style>
+</head>
+
+<body>
+    <div class="palette">
+        <input type="text" placeholder="Search commands...">
+        <div class="item">⌘ Dashboard</div>
+        <div class="item">⌘ Analytics</div>
+        <div class="item">⌘ Settings</div>
+        <div class="item">⌘ Logout</div>
+    </div>
+</body>
+
+</html>

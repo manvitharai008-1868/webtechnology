@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Role and Permission Management</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f5f9;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .role {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .permissions {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .permission {
+            background: #e0e7ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Role & Permission Management</h1>
+
+        <div class="role">
+            <h2>Administrator</h2>
+
+            <div class="permissions">
+                <span class="permission">Read</span>
+                <span class="permission">Write</span>
+                <span class="permission">Delete</span>
+                <span class="permission">Manage Users</span>
+            </div>
+        </div>
+
+        <div class="role">
+            <h2>Editor</h2>
+
+            <div class="permissions">
+                <span class="permission">Read</span>
+                <span class="permission">Write</span>
+            </div>
+        </div>
+
+        <div class="role">
+            <h2>Viewer</h2>
+
+            <div class="permissions">
+                <span class="permission">Read</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi-Agent Workflow</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+            padding: 30px;
+        }
+
+        .workflow {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .agents {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .agent {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .status {
+            color: #16a34a;
+            font-weight: bold;
+        }
+
+        @media(max-width: 700px) {
+            .agents {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="workflow">
+        <h1>Multi-Agent Workflow</h1>
+
+        <div class="agents">
+
+            <div class="agent">
+                <h2>Research Agent</h2>
+                <p class="status">Running</p>
+            </div>
+
+            <div class="agent">
+                <h2>Analysis Agent</h2>
+                <p class="status">Running</p>
+            </div>
+
+            <div class="agent">
+                <h2>Report Agent</h2>
+                <p class="status">Waiting</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Inheritance and Specificity</title>
+
+    <style>
+        /* Inheritance */
+        body {
+            font-family: Arial, sans-serif;
+            color: darkblue;
+        }
+
+        /* Element selector */
+        p {
+            color: green;
+        }
+
+        /* Class selector has higher specificity */
+        .special {
+            color: orange;
+        }
+
+        /* ID selector has higher specificity */
+        #important {
+            color: red;
+        }
+
+        /* Cascade */
+        .cascade {
+            color: purple;
+        }
+
+        .cascade {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Inheritance and Specificity</h1>
+
+    <p>
+        This paragraph inherits the font family from body.
+    </p>
+
+    <p class="special">
+        Class selector overrides the element selector.
+    </p>
+
+    <p id="important" class="special">
+        ID selector has higher specificity.
+    </p>
+
+    <p class="cascade">
+        The second .cascade rule wins because it comes later.
+    </p>
+
+    <br>
+
+    <a href="index.html">Back to CSS Programs</a> |
+    <a href="../index.html">Home</a>
+
+</body>
+
+</html>

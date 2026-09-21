@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change CSS</title>
+</head>
+
+<body>
+
+    <h1>Change CSS Dynamically</h1>
+
+    <p id="text">This text will change its style.</p>
+
+    <button onclick="changeStyle()">Change Style</button>
+
+    <script>
+        function changeStyle() {
+            let text = document.getElementById("text");
+
+            text.style.color = "blue";
+            text.style.fontSize = "30px";
+            text.style.backgroundColor = "lightyellow";
+        }
+    </script>
+
+</body>
+
+</html>
